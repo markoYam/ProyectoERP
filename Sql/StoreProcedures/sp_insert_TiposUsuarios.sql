@@ -1,4 +1,3 @@
-
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[sp_insert_TiposUsuarios]') AND type in (N'P', N'PC'))
 BEGIN
 EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[sp_insert_TiposUsuarios] AS' 
